@@ -2,7 +2,7 @@ resource aws_budgets_budget budget {
   count             = var.enable_budget ? 1 : 0
   name              = "${var.org_name}-Monthly Budget"
   budget_type       = "COST"
-  limit_amount      = format("%.1f", var.budget_ammount)
+  limit_amount      = format("%.1f", var.budget_amount)
   limit_unit        = "USD"
   time_period_start = "${substr(timestamp(), 0, 5)}01-01_00:00" # Getting Year
   time_unit         = var.budget_time

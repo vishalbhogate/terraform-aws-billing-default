@@ -15,7 +15,7 @@ variable "enable_budget" {
   description = "Flag to enable AWS Budget cost control"
   default     = false
 }
-variable "budget_ammount" {
+variable "budget_amount" {
   description = "The amount of cost or usage being measured for a budget."
   default     = "0"
 }
